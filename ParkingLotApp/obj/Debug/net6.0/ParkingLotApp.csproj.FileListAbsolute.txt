@@ -1,0 +1,17 @@
+D:\@NURD\@CODING\C#\ParkingLotApp\ParkingLotApp\bin\Debug\net6.0\ParkingLotApp.exe
+D:\@NURD\@CODING\C#\ParkingLotApp\ParkingLotApp\bin\Debug\net6.0\ParkingLotApp.deps.json
+D:\@NURD\@CODING\C#\ParkingLotApp\ParkingLotApp\bin\Debug\net6.0\ParkingLotApp.runtimeconfig.json
+D:\@NURD\@CODING\C#\ParkingLotApp\ParkingLotApp\bin\Debug\net6.0\ParkingLotApp.dll
+D:\@NURD\@CODING\C#\ParkingLotApp\ParkingLotApp\bin\Debug\net6.0\ParkingLotApp.pdb
+D:\@NURD\@CODING\C#\ParkingLotApp\ParkingLotApp\bin\Debug\net6.0\ConsoleTables.dll
+D:\@NURD\@CODING\C#\ParkingLotApp\ParkingLotApp\obj\Debug\net6.0\ParkingLotApp.csproj.AssemblyReference.cache
+D:\@NURD\@CODING\C#\ParkingLotApp\ParkingLotApp\obj\Debug\net6.0\ParkingLotApp.GeneratedMSBuildEditorConfig.editorconfig
+D:\@NURD\@CODING\C#\ParkingLotApp\ParkingLotApp\obj\Debug\net6.0\ParkingLotApp.AssemblyInfoInputs.cache
+D:\@NURD\@CODING\C#\ParkingLotApp\ParkingLotApp\obj\Debug\net6.0\ParkingLotApp.AssemblyInfo.cs
+D:\@NURD\@CODING\C#\ParkingLotApp\ParkingLotApp\obj\Debug\net6.0\ParkingLotApp.csproj.CoreCompileInputs.cache
+D:\@NURD\@CODING\C#\ParkingLotApp\ParkingLotApp\obj\Debug\net6.0\ParkingLotApp.csproj.CopyComplete
+D:\@NURD\@CODING\C#\ParkingLotApp\ParkingLotApp\obj\Debug\net6.0\ParkingLotApp.dll
+D:\@NURD\@CODING\C#\ParkingLotApp\ParkingLotApp\obj\Debug\net6.0\refint\ParkingLotApp.dll
+D:\@NURD\@CODING\C#\ParkingLotApp\ParkingLotApp\obj\Debug\net6.0\ParkingLotApp.pdb
+D:\@NURD\@CODING\C#\ParkingLotApp\ParkingLotApp\obj\Debug\net6.0\ParkingLotApp.genruntimeconfig.cache
+D:\@NURD\@CODING\C#\ParkingLotApp\ParkingLotApp\obj\Debug\net6.0\ref\ParkingLotApp.dll
