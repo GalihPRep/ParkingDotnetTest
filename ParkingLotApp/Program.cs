@@ -1,5 +1,6 @@
 ﻿using ConsoleTables;
 using ParkingLotApp;
+using System;
 
 internal class Program
 {
@@ -29,24 +30,24 @@ internal class Program
         else Help();
     }
 
-    //private static List<Vehicle?> _spaces = new List<Vehicle?> { null, null, null, null, null, null};
+    //private static List<Vehicle?> _spaces = new List<Vehicle?>();
     //private static List<Vehicle?> _spaces = new List<Vehicle?>
     //{
-    //    new Vehicle("B-1234-XYZ","Mobil","Putih"),
-    //    new Vehicle("B-9999-XYZ","Motor","Putih"),
-    //    new Vehicle("D-0001-HIJ","Mobil","Hitam"),
-    //    new Vehicle("B-7777-DEF","Mobil","Red"),
-    //    new Vehicle("B-2701-XXX","Mobil","Biru"),
-    //    new Vehicle("B-3141-ZZZ","Motor","Hitam")
+    //    new Vehicle("B-1234-XYZ","Mobil","Putih",DateTime.Parse("22/05/2023 08:05:27")),
+    //    new Vehicle("B-9999-XYZ","Motor","Putih",DateTime.Parse("22/05/2023 08:05:27")),
+    //    new Vehicle("D-0001-HIJ","Mobil","Hitam",DateTime.Parse("22/05/2023 08:05:27")),
+    //    new Vehicle("B-7777-DEF","Mobil","Red",DateTime.Parse("22/05/2023 08:05:27")),
+    //    new Vehicle("B-2701-XXX","Mobil","Biru",DateTime.Parse("22/05/2023 08:05:27")),
+    //    new Vehicle("B-3141-ZZZ","Motor","Hitam",DateTime.Parse("22/05/2023 08:05:27"))
     //};
     private static List<Vehicle?> _spaces = new List<Vehicle?>
     {
-        new Vehicle("B-1234-XYZ","Mobil","Putih"),
-        new Vehicle("B-9999-XYZ","Motor","Putih"),
-        new Vehicle("D-0001-HIJ","Mobil","Hitam"),
-        new Vehicle("B-333-SSS","Mobil","Putih"),
-        new Vehicle("B-2701-XXX","Mobil","Biru"),
-        new Vehicle("B-3141-ZZZ","Motor","Hitam")
+        new Vehicle("B-1234-XYZ","Mobil","Putih",DateTime.Parse("22/05/2023 09:05:27")),
+        new Vehicle("B-9999-XYZ","Motor","Putih",DateTime.Parse("22/05/2023 09:06:27")),
+        new Vehicle("D-0001-HIJ","Mobil","Hitam",DateTime.Parse("22/05/2023 09:07:27")),
+        new Vehicle("B-333-SSS","Mobil","Putih",DateTime.Parse("22/05/2023 10:11:27")),
+        new Vehicle("B-2701-XXX","Mobil","Biru",DateTime.Parse("22/05/2023 09:09:27")),
+        new Vehicle("B-3141-ZZZ","Motor","Hitam",DateTime.Parse("22/05/2023 09:10:27"))
     };
 
     private static void CreateSlot(string inputIn)
@@ -65,7 +66,7 @@ internal class Program
         try
         {
             var inputSplitted = inputIn?.Split(" ");
-            Vehicle vehicle = new Vehicle(inputSplitted?[0], inputSplitted?[2], inputSplitted?[1]);
+            Vehicle vehicle = new Vehicle(inputSplitted?[0], inputSplitted?[2], inputSplitted?[1], DateTime.Now);
 
             for (int i = 0; i < _spaces.Count; i++)
             {
@@ -97,7 +98,7 @@ internal class Program
 
     private static void Status()
     {
-        var table = new ConsoleTable("Slot", "Number", "Type", "Colour");
+        var table = new ConsoleTable("Slot", "Number", "Type", "Colour", "Check-in time", "Price");
         foreach (var item in _spaces)
         {
             if (item != null)
@@ -106,7 +107,9 @@ internal class Program
                 _spaces.IndexOf(item) + 1,
                 item?.Number,
                 item?.Type,
-                item?.Color
+                item?.Color,
+                item?.Time,
+                (int)Math.Ceiling((DateTime.Now - (item?.Time ?? DateTime.Now)).TotalHours)* 2000
             );
             }
         }
